@@ -21,13 +21,13 @@ struct Networker {
             var urlRequest = URLRequest(url: link)
             urlRequest.addValue("Accept-Version", forHTTPHeaderField: "v1")
         }
-        session.dataTaskPublisher(for: urlRequest)
+        return session.dataTaskPublisher(for: urls[0])
           .tryMap { response -> Data in
             guard
               let httpURLResponse = response.response as? HTTPURLResponse,
               httpURLResponse.statusCode == 200
               else {
-                throw GameError.statusCode
+                throw AppErrors.statusCode
             }
             return response.data
           }
