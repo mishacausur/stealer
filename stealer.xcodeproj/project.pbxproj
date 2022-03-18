@@ -24,6 +24,8 @@
 		B622513B27E48BF90020F6E2 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622513A27E48BF80020F6E2 /* AppErrors.swift */; };
 		B622513D27E48CF40020F6E2 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622513C27E48CF40020F6E2 /* Requester.swift */; };
 		B622513F27E48D920020F6E2 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622513E27E48D920020F6E2 /* Links.swift */; };
+		B622514427E4C7570020F6E2 /* Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622514327E4C7570020F6E2 /* Configure.swift */; };
+		B622514527E4C7570020F6E2 /* Configures.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622514227E4C7570020F6E2 /* Configures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		B622513A27E48BF80020F6E2 /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
 		B622513C27E48CF40020F6E2 /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
 		B622513E27E48D920020F6E2 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		B622514227E4C7570020F6E2 /* Configures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configures.swift; sourceTree = "<group>"; };
+		B622514327E4C7570020F6E2 /* Configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		B62250FA27E487110020F6E2 /* stealer */ = {
 			isa = PBXGroup;
 			children = (
+				B622514027E4C7240020F6E2 /* Helpers */,
 				B622513727E48BC80020F6E2 /* Networker */,
 				B622512B27E488440020F6E2 /* Router */,
 				B62250FB27E487110020F6E2 /* AppDelegate.swift */,
@@ -173,6 +178,23 @@
 				B622513A27E48BF80020F6E2 /* AppErrors.swift */,
 			);
 			path = Networker;
+			sourceTree = "<group>";
+		};
+		B622514027E4C7240020F6E2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B622514127E4C72C0020F6E2 /* Configure */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B622514127E4C72C0020F6E2 /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				B622514327E4C7570020F6E2 /* Configure.swift */,
+				B622514227E4C7570020F6E2 /* Configures.swift */,
+			);
+			path = Configure;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +329,7 @@
 			files = (
 				B622512D27E488540020F6E2 /* Routing.swift in Sources */,
 				B622513627E48A8C0020F6E2 /* UserViewModel.swift in Sources */,
+				B622514527E4C7570020F6E2 /* Configures.swift in Sources */,
 				B622513B27E48BF90020F6E2 /* AppErrors.swift in Sources */,
 				B622513327E4890E0020F6E2 /* Routes.swift in Sources */,
 				B622510027E487110020F6E2 /* UserViewController.swift in Sources */,
@@ -316,6 +339,7 @@
 				B62250FC27E487110020F6E2 /* AppDelegate.swift in Sources */,
 				B622513127E488A90020F6E2 /* Router.swift in Sources */,
 				B622513D27E48CF40020F6E2 /* Requester.swift in Sources */,
+				B622514427E4C7570020F6E2 /* Configure.swift in Sources */,
 				B62250FE27E487110020F6E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
