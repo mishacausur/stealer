@@ -14,7 +14,7 @@ protocol Presenter: AnyObject {
     var viewModel: ViewModel { get }
 }
 
-protocol UserViewInput {}
+protocol UserViewInput: Presenter {}
 
 protocol UserViewOutput: ViewModel {}
 
