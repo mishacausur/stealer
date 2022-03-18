@@ -8,9 +8,9 @@
 import Foundation
 
 protocol ViewModel: Routed {
-    weak var viewController: Presenter? { get set }
+    var viewController: Presenter? { get set }
 }
-protocol Presenter {
+protocol Presenter: AnyObject {
     var viewModel: ViewModel { get }
 }
 
@@ -18,9 +18,9 @@ protocol UserViewInput {}
 
 protocol UserViewOutput: ViewModel {}
 
-struct UserViewModel: UserViewOutput {
+class UserViewModel: UserViewOutput {
     
     var router: Routing?
     
-    var viewController: Presenter?
+    weak var viewController: Presenter?
 }

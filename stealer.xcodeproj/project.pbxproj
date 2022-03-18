@@ -20,6 +20,10 @@
 		B622513127E488A90020F6E2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622513027E488A90020F6E2 /* Router.swift */; };
 		B622513327E4890E0020F6E2 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622513227E4890E0020F6E2 /* Routes.swift */; };
 		B622513627E48A8C0020F6E2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622513527E48A8C0020F6E2 /* UserViewModel.swift */; };
+		B622513927E48BD80020F6E2 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622513827E48BD80020F6E2 /* Networker.swift */; };
+		B622513B27E48BF90020F6E2 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622513A27E48BF80020F6E2 /* AppErrors.swift */; };
+		B622513D27E48CF40020F6E2 /* Requester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622513C27E48CF40020F6E2 /* Requester.swift */; };
+		B622513F27E48D920020F6E2 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = B622513E27E48D920020F6E2 /* Links.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		B622513027E488A90020F6E2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		B622513227E4890E0020F6E2 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		B622513527E48A8C0020F6E2 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		B622513827E48BD80020F6E2 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		B622513A27E48BF80020F6E2 /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
+		B622513C27E48CF40020F6E2 /* Requester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requester.swift; sourceTree = "<group>"; };
+		B622513E27E48D920020F6E2 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 		B62250FA27E487110020F6E2 /* stealer */ = {
 			isa = PBXGroup;
 			children = (
+				B622513727E48BC80020F6E2 /* Networker */,
 				B622512B27E488440020F6E2 /* Router */,
 				B62250FB27E487110020F6E2 /* AppDelegate.swift */,
 				B62250FD27E487110020F6E2 /* SceneDelegate.swift */,
@@ -153,6 +162,17 @@
 				B622513527E48A8C0020F6E2 /* UserViewModel.swift */,
 			);
 			path = UserFlow;
+			sourceTree = "<group>";
+		};
+		B622513727E48BC80020F6E2 /* Networker */ = {
+			isa = PBXGroup;
+			children = (
+				B622513827E48BD80020F6E2 /* Networker.swift */,
+				B622513E27E48D920020F6E2 /* Links.swift */,
+				B622513C27E48CF40020F6E2 /* Requester.swift */,
+				B622513A27E48BF80020F6E2 /* AppErrors.swift */,
+			);
+			path = Networker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,11 +307,15 @@
 			files = (
 				B622512D27E488540020F6E2 /* Routing.swift in Sources */,
 				B622513627E48A8C0020F6E2 /* UserViewModel.swift in Sources */,
+				B622513B27E48BF90020F6E2 /* AppErrors.swift in Sources */,
 				B622513327E4890E0020F6E2 /* Routes.swift in Sources */,
 				B622510027E487110020F6E2 /* UserViewController.swift in Sources */,
 				B622512F27E488850020F6E2 /* Routed.swift in Sources */,
+				B622513927E48BD80020F6E2 /* Networker.swift in Sources */,
+				B622513F27E48D920020F6E2 /* Links.swift in Sources */,
 				B62250FC27E487110020F6E2 /* AppDelegate.swift in Sources */,
 				B622513127E488A90020F6E2 /* Router.swift in Sources */,
+				B622513D27E48CF40020F6E2 /* Requester.swift in Sources */,
 				B62250FE27E487110020F6E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
